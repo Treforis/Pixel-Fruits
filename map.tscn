@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://oxjhrnvv7mvh"]
+
+[ext_resource type="PackedScene" uid="uid://d3fdo8diq2mc1" path="res://Character/luffy__body.tscn" id="1_agumf"]
+[ext_resource type="PackedScene" uid="uid://cfuf2ltkcue45" path="res://Assets/Fruits/rubber_fruit.tscn" id="2_8lh4o"]
+[ext_resource type="PackedScene" uid="uid://b3uyy7iycihu1" path="res://Assets/swords/sword.tscn" id="3_i55ms"]
+[ext_resource type="PackedScene" uid="uid://dxcy0oep5nwlg" path="res://Character/ai_ennemy.tscn" id="4_n6xwi"]
+[ext_resource type="PackedScene" uid="uid://b8x2h45vua1hd" path="res://wall.tscn" id="5_xcm2p"]
+
+[node name="Map" type="Node2D"]
+
+[node name="Luffy _Body" parent="." instance=ExtResource("1_agumf")]
+position = Vector2(574, 351)
+
+[node name="Camera2D" type="Camera2D" parent="Luffy _Body"]
+
+[node name="RubberFruit" parent="." instance=ExtResource("2_8lh4o")]
+position = Vector2(357, 343)
+
+[node name="Sword" parent="." instance=ExtResource("3_i55ms")]
+position = Vector2(402, 342)
+
+[node name="AI ennemy" parent="." instance=ExtResource("4_n6xwi")]
+position = Vector2(772, 350)
+
+[node name="Wall" parent="." instance=ExtResource("5_xcm2p")]
+position = Vector2(673.645, 341)
+scale = Vector2(0.465, 0.465)
